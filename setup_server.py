@@ -22,22 +22,24 @@ def create_sql_server():
 
 
 def create_mysql():
-    print('MySQL')
+    print('We do not currently have functionality for MySQL')
 
 
 def create_postgresql():
-    config_dict: dict[str] = {'Server': {'Server Type': 'PostgreSQL',
-                                         'Server Address': 'Address',
-                                         'Database Name': 'DB Name',
-                                         'Username': 'Username',
-                                         'Password': 'Password'}}
-    config_dict['Server']['Server Address'] = input('Server Address: ')
-    config_dict['Server']['Database Name'] = input('Database Name: ')
-    config_dict['Server']['Username'] = input('Username: ')
-    config_dict['Server']['Password'] = input('Password: ')
+    # config_dict: dict[str] = {'Server': {'Server Type': 'PostgreSQL',
+    #                                      'Server Address': 'Address',
+    #                                      'Database Name': 'DB Name',
+    #                                      'Username': 'Username',
+    #                                      'Password': 'Password'}}
+    # config_dict['Server']['Server Address'] = input('Server Address: ')
+    # config_dict['Server']['Database Name'] = input('Database Name: ')
+    # config_dict['Server']['Username'] = input('Username: ')
+    # config_dict['Server']['Password'] = input('Password: ')
+    #
+    # with open(r'./key.yml', 'w') as file:
+    #     yaml.dump(config_dict, file)
 
-    with open(r'./key.yml', 'w') as file:
-        yaml.dump(config_dict, file)
+    print('We do not currently have functionality for PostgreSQL')
 
 
 if 'key.yml' in os.listdir(os.getcwd()):
