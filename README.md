@@ -9,7 +9,7 @@ First you will need to run the setup_server.py file. This will prompt you to inp
 
 ## 1. Files
 
-Simply put the BAI2 files into the bai_files directory. The program will upload every file that is in that directory even if it has already been added to the database so be sure to take the files out after you run them. 
+Simply put the BAI2 files into the bai_files directory. The program will upload every file that is in that directory. After each file is uploaded to the server, the file will be moved to the bai_files_old directory. This is done to ensure no files are uploaded twice.
 
 ## 2. Run
 
@@ -18,4 +18,3 @@ Run the upload.py file
 ## Comments
 
 1. The program currently can only insert data into SQL Server but we are looking to add the ability to insert into other servers such as PosgreSQL and MySQL.
-2. We are working on a feature that can move files to another directory after being uploaded.
