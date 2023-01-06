@@ -2,6 +2,7 @@
 #
 #
 
+import shutil
 from bai_parser import BAI2File
 import pyodbc
 import os
@@ -58,4 +59,6 @@ if server_type == 'SQL Server':
                            transaction['DataLoadDT'], transaction['FileName']
                            )
             conx.commit()
+            
+            shutil.move(current_directory + '/bai_files/' + local_file, current_directory + '/bai_files_old/')
             
