@@ -16,7 +16,6 @@ def create_sql_server():
     config_dict['Server']['Database Name'] = input('Database Name: ')
     config_dict['Server']['Username'] = input('Username: ')
     config_dict['Server']['Password'] = input('Password: ')
-
     with open(r'./key.yml', 'w') as file:
         yaml.dump(config_dict, file)
 
